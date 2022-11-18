@@ -13,12 +13,12 @@ pipeline {
         }
         stage('Tests') {
             steps {
-                bat "${env.PYTHON_PATH}\\Scripts\\py.test.exe main.py"
+                bat "${env.PYTHON_PATH}\\Scripts\\py.test.exe HelloWorld.py"
             }
         }
         stage('Deploy') {
             steps {
-                bat "${env.PYTHON_PATH}\\python.exe main.py"
+                bat "${env.PYTHON_PATH}\\python.exe HelloWorld.py"
             }
         }
     }
