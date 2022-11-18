@@ -18,7 +18,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                bat "${env.PYTHON_PATH}\\python.exe HelloWorld.py"
+                bat "${env.PYTHON_PATH}\\python.exe main.py"
             }
         }
     }
